@@ -2,10 +2,10 @@
   "name": "chai-backend",
   "version": "1.0.0",
   "description": "a backend project",
-  "type" :"module",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js"
   },
   "keywords": [
     "javascript",
@@ -13,5 +13,10 @@
     "chai"
   ],
   "author": "Aaditya Raj",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "mongoose": "^9.1.5"
+  }
 }
